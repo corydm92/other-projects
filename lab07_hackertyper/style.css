@@ -1,0 +1,81 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: black;
+    color: limegreen;
+    font-size: 18px; 
+    width: 1200px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+pre {
+    margin-left: 48px;
+    z-index: 0;
+}
+
+h1 {
+    font-size: 48px;
+    /* position: absolute; */
+    color: red;
+    /* background-color: white; */
+    width: 800px;
+    z-index: 1;
+}
+
+footer {
+    position: fixed;
+    /* background-color: white; */
+    height: 100%;
+    width: 100%;
+    bottom: 24px;
+}
+
+.grow {
+  position: absolute;
+  bottom: 0;
+  margin-left: 48px;
+  height: 400px;
+  width: 800px;
+          transition: all 5s ease;
+          animation: imganim 1s infinite linear both;
+
+}
+
+pre {
+    /* display: none; */
+}
+
+@keyframes imganim {
+from {width: 100%; height: calc(-100% + 1px); font-size: 12px}
+to {width: 100%; height: 110%; font-size: 90px} 
+}
+
+#virus-detected {
+    display: block;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 455px;
+    height: 165px;
+}
+
+#virus-detected h2 {
+    color: red;
+    border: 3px solid red;
+    background-color: black;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 48px;
+}

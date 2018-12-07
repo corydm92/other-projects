@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="normalize.css"/>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Amiri" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+
+        <title>Javascript Lab 6</title>
+    </head>
+  
+    <body class="center">
+    
+        <header>
+
+            <nav>
+            </nav>
+
+        </header>
+
+        <div id="main-div">
+
+            <div id="controller-wrapper" class="center">
+                <button id="show-clock">Show Clock</button>
+                <button id="show-laps">Show Laps</button>
+                <button id="show-countdown">Show Countdown</button>
+            </div>
+            
+
+            <div id="clock-wrapper">   
+            </div>
+
+
+            <div id="lap-timer-wrapper">
+                <div id="clock">
+                    </div>
+        
+                    <ol id="lap-list">
+                        <h2>Laps</h2>
+                    </ol>
+        
+                    <div id="start-button-wrapper">
+                        <button id="start-button">Start</button>
+                    </div>
+        
+                    <div id="reset-button-wrapper">
+                        <button id="reset-button">Reset</button>
+                    </div>
+        
+                    <div id="lap-button-wrapper">
+                        <button id="lap-button">Lap</button>
+                    </div>
+            </div>
+            
+            <div id="countdown-timer-wrapper">
+                <div id="countdown-timer">
+                </div>
+
+                <div id="countdown-btn-wrapper">
+                    <button id="countdown-start-btn">Start</button>
+                    <button id="countdown-stop-btn">Stop</button>
+                    <button id="countdown-reset-btn">Reset</button>
+                </div>
+
+                <div id="countdown-list-wrapper">
+                    <!-- <form> -->
+                        <select id="countdown-list">
+                            <option>Second</option>
+                            <option>Minute</option>
+                            <option>Hour</option>
+                        </select>
+                        <input type="text" id="countdown-input" placeholder="Enter Time Here">
+                    <!-- </form> -->
+
+                    <div id="submit-button-wrapper">
+                        <button id="countdown-input-btn">Submit</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <footer>
+        </footer>
+
+        <script src="app.js"></script>
+    
+    </body>
+
+</html>
