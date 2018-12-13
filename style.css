@@ -1,0 +1,44 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 72px;
+}
+
+ul {
+    display: inline-block;
+    width: auto;
+    padding: 0;
+    display: flex;
+    align-content: center;
+}
+
+#link-wrapper {
+    display: flex;
+    align-content: center;
+}
+
+button {
+    width: 215px;
+    font-size: 36px;
+    list-style: none;
+    margin-bottom: 12px;
+    /* text-align: justify; */
+}
+
+a {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
