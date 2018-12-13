@@ -11,6 +11,12 @@ html {
     margin-right: auto;
 }
 
+body {
+    background-color: black;
+    color: white;
+}
+
+
 h1 {
     text-align: center;
     font-size: 72px;
