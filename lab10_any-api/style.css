@@ -1,0 +1,171 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    /* padding: 24px; */
+    background-color: rgba(0, 0, 0, .8);
+    color: white;
+}
+
+#header-wrapper, #main-div {
+    width: 1000px;
+}
+
+img {
+    margin-bottom: 12px;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 223px;
+    height: 311px;
+    box-shadow: -2px 1px 5px 2px rgba(255, 255, 255, .4);
+}
+
+/*  Header Stuff ------------------------------------------------------------ */
+
+header {
+    margin-bottom: 12px;
+    background-color: rgba(0, 0, 0, .8);
+    padding: 12px 6px 0 6px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 3px solid white;
+}
+
+#page-down {
+    margin-right: 6px;
+}
+
+#page-counter-text {
+    font-size: 24px;
+    margin-left: auto;
+    margin-right: 6px;
+}
+
+#card-name-search {
+    width: 206px;
+    /* margin-right: 6px; */
+    padding-left: 6px;
+}
+
+#page-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+#page-wrapper button {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100px;
+    height: 24px;
+}
+
+#page-wrapper p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#card-name-search-wrapper {
+    display: flex;
+}
+
+#card-name-search, #set-name-search {
+    margin-right: 6px;
+    margin-bottom: 12px;
+}
+
+#search-submit, #show-filter {
+    height: 24px;
+    margin-right: 6px;
+}
+
+#results-text {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    font-size: 24px;
+    margin-right: 6px;
+}
+
+#filter-wrapper div {
+    display: inline-block;
+    margin-right: 6px;
+    padding: 0;
+}
+
+#filter-wrapper div input {
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+#filter-wrapper div p {
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#reset-wrapper {
+    margin-right: 0;
+}
+
+#filter-buttons {
+    margin-top: 12px;
+}
+
+#reset-wrapper, #set-names-button-wrapper {
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+#main-filter-wrapper {
+    transition-property: opacity, height;
+    -webkit-transition-property: opacity, height;
+    transition-duration: 500ms;
+    -webkit-transition-duration: 500ms;
+    transition-timing-function: ease-out;
+    -webkit-transition-duration: ease-out;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+#main-filter-wrapper.clicked {
+    opacity: 1;
+    height: 70px;
+}
+
+/* Body Stuff --------------------------------------------------------------- */
+
+#cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .8);
+    padding: 24px;
+    border-radius: 12px;
+    margin-bottom: 60px;
+
+    transition-property: margin-top;
+    transition-duration: 500ms;
+    transition-timing-function: ease-out;
+
+    margin-top: 96px;
+
+}   
+
+#cards-wrapper.clicked {
+    margin-top: 168px;
+};
+

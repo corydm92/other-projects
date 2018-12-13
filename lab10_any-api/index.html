@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="normalize.css"/>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Amiri" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>MTG API</title>
+    </head>
+  
+    <body class="center">
+    
+        <header>
+
+            <div id="header-wrapper" class="center">
+                <div id="page-wrapper">
+                    <button id="page-down">Page Down</button>
+                    <button id="page-up">Page Up</button>
+                </div>
+
+                <div id="card-name-search-wrapper">
+                    <input type="text" id="card-name-search" placeholder="Enter Card Name">
+                    <input type="text" id="set-name-search" placeholder="Enter Set Code - ex: LEA">
+                    <button id="search-submit">Submit</button>
+                    <button id="show-filter">Show Filter</button>
+                    
+                </div>
+
+                <div id="main-filter-wrapper" class="unclicked">
+                    <div id="filter-wrapper">
+                        <div id="common-wrapper">
+                            <input type="checkbox" id="common-box"><p>Common</p>
+                        </div>
+                        <div id="uncommon-wrapper">
+                            <input type="checkbox" id="uncommon-box"><p>Uncommon</p>
+                        </div>
+                        <div id="rare-wrapper">
+                                <input type="checkbox" id="rare-box"><p>Rare</p>
+                            </div>
+                        <div id="mythic-wrapper">
+                            <input type="checkbox" id="mythic-box"><p>Mythic</p>
+                        </div>
+                    </div>
+
+                    <div id="filter-buttons">
+                        <div id="reset-wrapper">
+                                <button id="reset-button">Reset All</button>
+                            </div>
+                            <div id="set-names-button-wrapper">
+                                <a href="https://mtg.gamepedia.com/Template:List_of_Magic_sets" target="_blank"><button id="set-names-button">List of Set Codes</button></a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div id="main-div" class="center">
+
+            <div id="cards-wrapper" class="center unclicked">
+
+            </div>
+        
+        </div>
+
+        <footer>
+        </footer>
+
+        <script src="app.js"></script>
+    
+    </body>
+
+</html>
