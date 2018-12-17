@@ -113,31 +113,31 @@ function mainSubmitFunct(e) {
         for (let i = 0; i < response.cards.length; i++) {
             if (commonBox.checked === true) {
                 if (response.cards[i].rarity === "Common" && response.cards[i].rarity != "Uncommon" ) {
-                    let resultHTML = `<a href="${tcgURL+(response.cards[i].name)}" target="_blank"><img src=${response.cards[i].imageUrl}></a>`;
+                    let resultHTML = `<a href="${tcgURL+(response.cards[i].name)}" target="_blank"><img src="${response.cards[i].imageUrl}"></a>`;
                     cardsWrapper.innerHTML += resultHTML;
                 };
             };
             if (uncommonBox.checked === true) {
                 if (response.cards[i].rarity === "Uncommon" && response.cards[i].rarity != "Common" ) {
-                    let resultHTML = `<a href="${tcgURL+(response.cards[i].name)}" target="_blank"><img src=${response.cards[i].imageUrl}></a>`;
+                    let resultHTML = `<a href="${tcgURL+(response.cards[i].name)}" target="_blank"><img src="${response.cards[i].imageUrl}"></a>`;
                     cardsWrapper.innerHTML += resultHTML;
                 };
             };
             if (rareBox.checked === true) {
                 if (response.cards[i].rarity === "Rare") {
-                    let resultHTML = `<a href="${tcgURL+(response.cards[i].name)}" target="_blank"><img src=${response.cards[i].imageUrl}></a>`;
+                    let resultHTML = `<a href="${tcgURL+(response.cards[i].name)}" target="_blank"><img src="${response.cards[i].imageUrl}"></a>`;
                     cardsWrapper.innerHTML += resultHTML;
                 };
             };
             if (mythicBox.checked === true) {
                 if (response.cards[i].rarity === "Mythic Rare") {
-                    let resultHTML = `<a href="${tcgURL+(response.cards[i].name)}" target="_blank"><img src=${response.cards[i].imageUrl}></a>`;
+                    let resultHTML = `<a href="${tcgURL+(response.cards[i].name)}" target="_blank"><img src="${response.cards[i].imageUrl}"></a>`;
                     cardsWrapper.innerHTML += resultHTML;
                 };
             };
             if (commonBox.checked === false && uncommonBox.checked === false && rareBox.checked === false && mythicBox.checked === false) {
                 if (response.cards[i].imageUrl) {
-                    let resultHTML = `<a href="${tcgURL+(response.cards[i].name)}" target="_blank"><img src=${response.cards[i].imageUrl}></a>`;
+                    let resultHTML = `<a href="${tcgURL+(response.cards[i].name)}" target="_blank"><img src="${response.cards[i].imageUrl}"></a>`;
                     cardsWrapper.innerHTML += resultHTML;
                 };
             };
@@ -180,7 +180,7 @@ function firstLoad () {
 
         for (let i = 0; i < response.cards.length; i++) {
             if (response.cards[i].imageUrl) {
-                let resultHTML = `<a href="${tcgURL+(response.cards[i].name)}" target="_blank"><img src=${response.cards[i].imageUrl}></a>`;
+                let resultHTML = `<a href="${tcgURL+(response.cards[i].name)}" target="_blank"><img src="${response.cards[i].imageUrl}"></a>`;
                 cardsWrapper.innerHTML += resultHTML;
             }
         };
@@ -226,31 +226,31 @@ pageUp.addEventListener("click", function(e) {
         for (let i = 0; i < response.cards.length; i++) {
             if (commonBox.checked === true) {
                 if (response.cards[i].rarity === "Common" && response.cards[i].rarity != "Uncommon" ) {
-                    let resultHTML = `<a href="${tcgURL+(response.cards[i].name)}" target="_blank"><img src=${response.cards[i].imageUrl}></a>`;
+                    let resultHTML = `<a href="${tcgURL+(response.cards[i].name)}" target="_blank"><img src="${response.cards[i].imageUrl}"></a>`;
                     cardsWrapper.innerHTML += resultHTML;
                 };
             };
             if (uncommonBox.checked === true) {
                 if (response.cards[i].rarity === "Uncommon" && response.cards[i].rarity != "Common" ) {
-                    let resultHTML = `<a href="${tcgURL+(response.cards[i].name)}" target="_blank"><img src=${response.cards[i].imageUrl}></a>`;
+                    let resultHTML = `<a href="${tcgURL+(response.cards[i].name)}" target="_blank"><img src="${response.cards[i].imageUrl}"></a>`;
                     cardsWrapper.innerHTML += resultHTML;
                 };
             };
             if (rareBox.checked === true) {
                 if (response.cards[i].rarity === "Rare") {
-                    let resultHTML = `<a href="${tcgURL+(response.cards[i].name)}" target="_blank"><img src=${response.cards[i].imageUrl}></a>`;
+                    let resultHTML = `<a href="${tcgURL+(response.cards[i].name)}" target="_blank"><img src="${response.cards[i].imageUrl}"></a>`;
                     cardsWrapper.innerHTML += resultHTML;
                 };
             };
             if (mythicBox.checked === true) {
                 if (response.cards[i].rarity === "Mythic Rare") {
-                    let resultHTML = `<a href="${tcgURL+(response.cards[i].name)}" target="_blank"><img src=${response.cards[i].imageUrl}></a>`;
+                    let resultHTML = `<a href="${tcgURL+(response.cards[i].name)}" target="_blank"><img src="${response.cards[i].imageUrl}"></a>`;
                     cardsWrapper.innerHTML += resultHTML;
                 };
             };
             if (commonBox.checked === false && uncommonBox.checked === false && rareBox.checked === false && mythicBox.checked === false) {
                 if (response.cards[i].imageUrl) {
-                    let resultHTML = `<a href="${tcgURL+(response.cards[i].name)}" target="_blank"><img src=${response.cards[i].imageUrl}></a>`;
+                    let resultHTML = `<a href="${tcgURL+(response.cards[i].name)}" target="_blank"><img src="${response.cards[i].imageUrl}"></a>`;
                     cardsWrapper.innerHTML += resultHTML;
                 };
             };
@@ -296,31 +296,31 @@ pageDown.addEventListener("click", function(e) {
         for (let i = 0; i < response.cards.length; i++) {
             if (commonBox.checked === true) {
                 if (response.cards[i].rarity === "Common" && response.cards[i].rarity != "Uncommon" ) {
-                    let resultHTML = `<a href="${tcgURL+(response.cards[i].name)}" target="_blank"><img src=${response.cards[i].imageUrl}></a>`;
+                    let resultHTML = `<a href="${tcgURL+(response.cards[i].name)}" target="_blank"><img src="${response.cards[i].imageUrl}"></a>`;
                     cardsWrapper.innerHTML += resultHTML;
                 };
             };
             if (uncommonBox.checked === true) {
                 if (response.cards[i].rarity === "Uncommon" && response.cards[i].rarity != "Common" ) {
-                    let resultHTML = `<a href="${tcgURL+(response.cards[i].name)}" target="_blank"><img src=${response.cards[i].imageUrl}></a>`;
+                    let resultHTML = `<a href="${tcgURL+(response.cards[i].name)}" target="_blank"><img src="${response.cards[i].imageUrl}"></a>`;
                     cardsWrapper.innerHTML += resultHTML;
                 };
             };
             if (rareBox.checked === true) {
                 if (response.cards[i].rarity === "Rare") {
-                    let resultHTML = `<a href="${tcgURL+(response.cards[i].name)}" target="_blank"><img src=${response.cards[i].imageUrl}></a>`;
+                    let resultHTML = `<a href="${tcgURL+(response.cards[i].name)}" target="_blank"><img src="${response.cards[i].imageUrl}"></a>`;
                     cardsWrapper.innerHTML += resultHTML;
                 };
             };
             if (mythicBox.checked === true) {
                 if (response.cards[i].rarity === "Mythic Rare") {
-                    let resultHTML = `<a href="${tcgURL+(response.cards[i].name)}" target="_blank"><img src=${response.cards[i].imageUrl}></a>`;
+                    let resultHTML = `<a href="${tcgURL+(response.cards[i].name)}" target="_blank"><img src="${response.cards[i].imageUrl}"></a>`;
                     cardsWrapper.innerHTML += resultHTML;
                 };
             };
             if (commonBox.checked === false && uncommonBox.checked === false && rareBox.checked === false && mythicBox.checked === false) {
                 if (response.cards[i].imageUrl) {
-                    let resultHTML = `<a href="${tcgURL+(response.cards[i].name)}" target="_blank"><img src=${response.cards[i].imageUrl}></a>`;
+                    let resultHTML = `<a href="${tcgURL+(response.cards[i].name)}" target="_blank"><img src="${response.cards[i].imageUrl}"></a>`;
                     cardsWrapper.innerHTML += resultHTML;
                 };
             };
