@@ -1,0 +1,30 @@
+h1 {
+    text-align: center;
+}
+
+#grocery_list {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#grocery_list form {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    font-size: 24px;
+    margin: 12px;
+}
+
+.grocery-delete {
+    margin-right: 12px;
+}
+
+
+

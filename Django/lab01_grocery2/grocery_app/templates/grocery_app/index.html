@@ -1,0 +1,23 @@
+{% extends "grocery_app/base.html" %}
+
+{% block body %}
+    <div id="grocery_list">
+        <h1>Grocery List</h1>
+        <ul>
+            {% for grocery_item in grocery_items %}
+                <li>
+                <a href="{% url 'grocery_app:remove_grocery' grocery_item.pk %}"><button class="grocery-delete">Delete</button></a>{{ grocery_item }}</li>
+                
+            {% endfor %}
+        </ul>
+
+        <form action="{% url 'grocery_app:new_grocery' %}" method="post">
+            {% csrf_token %}
+            <input type=text name="new-grocery">
+            <button type="submit">Add New Grocery</button>
+        </form>
+    </div>
+{% endblock %}
+
+
+
